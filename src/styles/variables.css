@@ -19,5 +19,11 @@
   @theme {
     --font-montserrat: "Montserrat", sans-serif;
     --font-montserrat-italic: "Montserrat-italic", sans-serif;
+    --color-primary: #556E5B;
+    --color-secondary: #F1E0D8;
+  }
+
+  screens {
+    xs: {max: '600px'}
   }
   
