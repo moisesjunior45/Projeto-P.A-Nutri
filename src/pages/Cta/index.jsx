@@ -1,5 +1,6 @@
 import priscila from "../../assets/images/nutritionist/PriscilaAraujo1.JPG";
 import logo from "../../assets/images/logos/logo3.png";
+import Button from "../../components/Button";
 
 export default function Cta() {
   return (
@@ -19,16 +20,9 @@ export default function Cta() {
         </h1>
 
         <div className="mt-8 md:mt-24 text-center">
-        <a
-          href="#"
-          className="inline-block rounded-sm bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
-        >
-          Agendar consulta
-        </a>
+          <Button />
+        </div>
       </div>
-      </div>
-
-      
 
       <img
         alt="Nutricionista Priscila Araújo de jaleco branco"
@@ -38,4 +32,3 @@ export default function Cta() {
     </section>
   );
 }
-
