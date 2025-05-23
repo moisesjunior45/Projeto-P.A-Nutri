@@ -1,4 +1,4 @@
-import Cta from "./pages/CTA";
+import Cta from "./pages/Cta";
 
 function App() {
   return (
