@@ -1,9 +1,10 @@
+import NavBar from "./components/NavBar";
 import Cta from "./pages/Cta";
 
 function App() {
   return (
     <>
-      <h1 className="font-bold text-3xl">Priscila Araújo</h1>
+     <NavBar />
       <Cta />
     </>
   );

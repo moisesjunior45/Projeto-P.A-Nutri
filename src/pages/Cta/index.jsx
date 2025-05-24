@@ -27,7 +27,7 @@ export default function Cta() {
       <img
         alt="Nutricionista Priscila Araújo de jaleco branco"
         src={priscila}
-        className="w-full object-cover sm:h-full"
+        className="hidden w-full object-cover sm:h-full sm:block"
       />
     </section>
   );
