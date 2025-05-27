@@ -17,7 +17,7 @@ export default function NavBar() {
     <>
       <nav className="relative p-4 bg-white w-full h-[100px] flex items-center justify-between border-b-2 border-[#556E5B]">
         <ul className="hidden md:flex space-x-4">
-          <li className="text-3xl hover:text-[#455148] hover:underline">
+          <li className="text-3xl hover:text-[#455148] hover:underline text-primary">
             <a
               href="https://www.instagram.com/priscilaaraujonutricionista/"
               target="_blank"
@@ -25,7 +25,7 @@ export default function NavBar() {
               <CiInstagram />
             </a>
           </li>
-          <li className="text-3xl hover:text-[#556E5B] hover:underline">
+          <li className="text-3xl hover:text-[#556E5B] hover:underline text-primary">
             <a
               href="https://api.whatsapp.com/send/?phone=558189147221&text&type=phone_number&app_absent=0"
               target="_blank"
