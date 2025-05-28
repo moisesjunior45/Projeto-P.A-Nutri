@@ -93,16 +93,16 @@ export default function NavBar() {
           <div className="absolute top-full left-0 w-full bg-white p-4 shadow-md mn:hidden">
             <ul className="space-y-4 text-primary">
               <li className="text-lg hover:text-[#556E5B] hover:underline">
-                <a href="#">Sobre</a>
+                <a href="#about">Sobre</a>
               </li>
               <li className="text-lg hover:text-[#556E5B] hover:underline">
-                <a href="#">Especialidades</a>
+                <a href="#specialties">Especialidades</a>
               </li>
               <li className="text-lg hover:text-[#556E5B] hover:underline">
-                <a href="#">Depoimentos</a>
+                <a href="#testimonials">Depoimentos</a>
               </li>
               <li className="text-lg hover:text-[#556E5B] hover:underline">
-                <a href="#">Ebooks</a>
+                <a href="#ebooks">Ebooks</a>
               </li>
             </ul>
           </div>
