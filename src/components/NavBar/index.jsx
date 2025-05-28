@@ -44,16 +44,16 @@ export default function NavBar() {
         <div className="hidden mm:flex items-center space-x-4">
           <ul className="flex space-x-6 text-primary text-[12px] font-bold max-mm:text-[10px]">
             <li className="hover:text-[#556E5B] hover:underline">
-              <a href="#">Sobre</a>
+              <a href="#about">Sobre</a>
             </li>
             <li className="hover:text-[#556E5B] hover:underline">
-              <a href="#">Especialidades</a>
+              <a href="#specialties">Especialidades</a>
             </li>
             <li className="hover:text-[#556E5B] hover:underline">
-              <a href="#">Depoimentos</a>
+              <a href="#testimonials">Depoimentos</a>
             </li>
             <li className="hover:text-[#556E5B] hover:underline">
-              <a href="#">Ebooks</a>
+              <a href="#ebooks">Ebooks</a>
             </li>
           </ul>
 
