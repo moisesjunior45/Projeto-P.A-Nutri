@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import About from "./pages/About";
 import Cta from "./pages/Cta";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
      <NavBar />
       <Cta />
+      <About />
     </>
   );
 }
