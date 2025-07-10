@@ -1,41 +1,52 @@
 import Card from "../../components/Card";
-import introducaoAlimentar from "../../assets/images/covers/Manual-de-Introducao-Alimentar.png";
-import ReceitasSimples from "../../assets/images/covers/Receitas-simples-e-saudaveis.png";
-import DicasAlimentacao from "../../assets/images/covers/Dicas-de-como-seguir-uma-boa-alimentacao.png";
+
+// Covers
+import HealthyPlate from "../../assets/images/covers/healthy-plate.jpeg";
+import AvoidWaste from "../../assets/images/covers/avoid-waste.jpeg";
+import WashHands from "../../assets/images/covers/wash-your-hands.jpeg";
+import SimpleRecipes from "../../assets/images/covers/simple-recipes.jpg";
 
 export default function Ebook() {
   const ebooks = [
     {
-      title: "Manual de Introdução Alimentar",
-      image: introducaoAlimentar,
+      title: "Como Montar um Prato Saudável",
+      image: HealthyPlate,
       description:
-        "Aprimore suas receitas e tenha resultados reais na sua dieta!",
-      downloadLink: "https://example.com/manual-introducao-alimentar",
+        "Aprenda a montar pratos saudáveis com equilíbrio entre vegetais, proteínas e carboidratos. Simples, prático e nutritivo.",
+      downloadLink: "https://example.com/como-montar-um-prato-saudavel",
     },
     {
-      title: "Receitas Simples e Saudáveis",
-      image: ReceitasSimples,
+      title: "Evite o desperdício de alimentos!",
+      image: AvoidWaste,
       description:
-        "Conheça o poder dos alimentos que podem te ajudar a ter uma vida mais saudável!",
-      downloadLink: "#",
+        "Aprenda a evitar desperdícios e montar pratos saudáveis na medida certa. Prático, consciente e nutritivo.",
+      downloadLink: "https://example.com/evite-desperdicio",
     },
     {
-      title: "Dicas de Como Seguir uma Boa Alimentação",
-      image: DicasAlimentacao,
-      description: "Refeições, Saladas e Sopas.",
-      downloadLink: "#",
+      title: "Higiene na alimentação",
+      image: WashHands,
+      description:
+        "Adote hábitos de higiene para garantir refeições mais seguras. ",
+      downloadLink: "https://example.com/higiene-na-alimentacao",
+    },
+    {
+      title: "Receitas simples e saudáveis",
+      image: SimpleRecipes,
+      description:
+        "Descubra receitas leves e nutritivas para o dia a dia. Simples, saboroso e saudável.",
+      downloadLink: "https://example.com/receitas-simples",
     },
   ];
   return (
     <section
-      className="container mx-auto px-6 py-16 flex flex-col justify-center"
+      className="min-h-screen flex items-center justify-center flex-col px-6 py-16"
       id="ebooks"
     >
       <h1 className="text-primary text-[40px] font-bold mb-8 text-center">
         Baixe meus Ebooks e Aprimore Sua Saúde!
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-20 mt-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 gap-x-50 justify-center">
         {ebooks.map((ebook, index) => (
           <Card key={index} {...ebook} />
         ))}
