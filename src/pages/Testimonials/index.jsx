@@ -9,18 +9,15 @@ import "../../styles/custom-swiper-bullet.css";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Maria Clara",
-      age: 35,
-      text: "Consultar com Priscila foi uma das melhores decisões que tomei para a minha saúde. Ela me ajudou a entender meus hábitos alimentares e a fazer escolhas mais saudáveis.",
+      name: "Gustavo Lopes",
+      text: "Mas ontem cheguei a dar uma olhada e ameiii o cronograma, muito lindo, muito bem feito.",
     },
     {
-      name: "João Pedro",
-      age: 28,
-      text: "Com a orientação da Dra. Priscila, consegui perder 10kg em 3 meses de forma saudável e sustentável! Recomendo a todos!",
+      name: "Juan Santos",
+      text: "Obrigado, ficou bem fácil de seguir.",
     },
     {
       name: "Carlos Eduardo",
-      age: 40,
       text: "A equipe foi muito atenciosa e profissional. Meu processo foi tranquilo e consegui alcançar meus objetivos de forma eficaz!",
     },
   ];
@@ -56,7 +53,7 @@ export default function Testimonials() {
             >
               <p className="text-[18px] font-medium">"{testimonial.text}"</p>
               <p className="text-[18px] font-medium mt-6 mb-4 opacity-80">
-                {testimonial.name}, {testimonial.age} anos
+                {testimonial.name}.
               </p>
             </SwiperSlide>
           ))}
