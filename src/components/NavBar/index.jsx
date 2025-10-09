@@ -36,7 +36,7 @@ export default function NavBar() {
         </ul>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[172px]">
-          <a href="#">
+          <a href="/">
             <img src={logo} alt="Logo" />
           </a>
         </div>
