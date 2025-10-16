@@ -10,45 +10,61 @@ export default function Ebook() {
   const ebooks = [
     {
       title: "Como Montar um Prato Saudável",
+      subtitle: "Aprenda a montar pratos saudáveis com equilíbrio.",
       image: HealthyPlate,
-      description:
-        "Aprenda a montar pratos saudáveis com equilíbrio entre vegetais, proteínas e carboidratos. Simples, prático e nutritivo.",
-      downloadLink: "https://example.com/como-montar-um-prato-saudavel",
-    },
-    {
-      title: "Evite o desperdício de alimentos!",
-      image: AvoidWaste,
-      description:
-        "Aprenda a evitar desperdícios e montar pratos saudáveis na medida certa. Prático, consciente e nutritivo.",
-      downloadLink: "https://example.com/evite-desperdicio",
-    },
-    {
-      title: "Higiene na alimentação",
-      image: WashHands,
-      description:
-        "Adote hábitos de higiene para garantir refeições mais seguras. ",
-      downloadLink: "https://example.com/higiene-na-alimentacao",
+      downloadLink: "https://example.com/manual-introducao-alimentar",
     },
     {
       title: "Receitas simples e saudáveis",
-      image: SimpleRecipes,
-      description:
+      subtitle:
         "Descubra receitas leves e nutritivas para o dia a dia. Simples, saboroso e saudável.",
+      image: SimpleRecipes,
       downloadLink: "https://example.com/receitas-simples",
     },
+    {
+      title: "Evite o desperdício de alimentos!",
+      subtitle:
+        "Aprenda a evitar desperdícios e montar pratos saudáveis na medida certa.",
+      image: AvoidWaste,
+      downloadLink: "https://example.com/evite-desperdicio",
+    },
   ];
+
   return (
     <section
-      className="min-h-screen flex items-center justify-center flex-col px-6 py-16"
+      className="w-full px-6 py-16 bg-white flex flex-col items-center"
       id="ebooks"
     >
-      <h1 className="text-primary text-[40px] font-bold mb-8 text-center">
-        Baixe meus Ebooks e Aprimore Sua Saúde!
+      <h1 className="text-primary text-[32px] md:text-[40px] font-bold text-center mb-12">
+        Baixe Nossos Ebooks e Aprimore Sua Saúde!
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 gap-x-50 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl w-full">
         {ebooks.map((ebook, index) => (
-          <Card key={index} {...ebook} />
+          <div
+            key={index}
+            className="flex flex-col items-center bg-white rounded-lg shadow-md p-4 transition hover:shadow-xl"
+          >
+            <img
+              src={ebook.image}
+              alt={ebook.title}
+              className="w-full h-full object-cover rounded-md mb-4"
+            />
+            <h2 className="text-lg font-bold text-gray-800 text-center mb-2">
+              {ebook.title}
+            </h2>
+            <p className="text-sm text-gray-600 text-center mb-4">
+              {ebook.subtitle}
+            </p>
+            <a
+              href={ebook.downloadLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto bg-primary text-white px-4 py-2 rounded transition"
+            >
+              Baixar Ebook
+            </a>
+          </div>
         ))}
       </div>
     </section>

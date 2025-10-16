@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 export default function Cta() {
   return (
     <>
-      <section className="min-h-screen md:overflow-hidden bg-primary sm:grid sm:grid-cols-2">
+      <section className="max-h-[924px] md:overflow-hidden bg-primary sm:grid sm:grid-cols-2">
         <div className="p-8 md:p-12 space-y-24 md:space-y-32 lg:space-y-48">
           <div className="flex items-center justify-start md:justify-center">
             <img
@@ -28,11 +28,9 @@ export default function Cta() {
         <img
           alt="Nutricionista Priscila Araújo de jaleco branco"
           src={priscila}
-          className="hidden w-full object-cover sm:h-full sm:block"
+          className="hidden w-full object-cover h-full sm:block 2xl:aspect-[3.5/4]"
         />
       </section>
-
-     
     </>
   );
 }
