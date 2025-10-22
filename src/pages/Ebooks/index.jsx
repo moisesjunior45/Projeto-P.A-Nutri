@@ -43,8 +43,8 @@ export default function Ebook() {
         {ebooks.map((ebook, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white rounded-lg shadow-md p-4 transition hover:shadow-xl"
-          >
+            className="flex flex-col items-center bg-white rounded-lg shadow-md p-4
+             transition hover:shadow-xl w-[300px] sm:w-[80%] md:w-auto mx-auto">
             <img
               src={ebook.image}
               alt={ebook.title}
