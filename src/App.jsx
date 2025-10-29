@@ -4,6 +4,7 @@ import Cta from "./pages/Cta";
 import Specialties from "./pages/Specialties";
 import Testimonials from "./pages/Testimonials";
 import Ebook from "./pages/Ebooks";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Specialties/>
       <Testimonials />
       <Ebook />
+      <Footer/>
     </>
   );
 }

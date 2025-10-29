@@ -15,7 +15,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="relative p-4 bg-white w-full h-[100px] flex items-center justify-between border-b-2 border-[#556E5B]">
+      <nav className="relative p-4 bg-white w-full h-[100px] flex items-center justify-between border-b-2 border-[#556E5B]" id="Home">
         <ul className="hidden md:flex space-x-4">
           <li className="text-3xl hover:text-[#455148] hover:underline text-primary">
             <a
