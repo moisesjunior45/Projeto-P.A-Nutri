@@ -5,6 +5,7 @@ import Specialties from "./pages/Specialties";
 import Testimonials from "./pages/Testimonials";
 import Ebook from "./pages/Ebooks";
 import Footer from "./components/Footer";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <NavBar />
       <Cta />
       <About />
-      <Specialties/>
+      <Specialties />
       <Testimonials />
       <Ebook />
-      <Footer/>
+      <Faq />
+      <Footer />
     </>
   );
 }

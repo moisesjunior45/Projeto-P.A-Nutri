@@ -15,7 +15,10 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="relative p-4 bg-white w-full h-[100px] flex items-center justify-between border-b-2 border-[#556E5B]" id="Home">
+      <nav
+        className="relative p-4 bg-white w-full h-[100px] flex items-center justify-between border-b-2 border-[#556E5B]"
+        id="Home"
+      >
         <ul className="hidden md:flex space-x-4">
           <li className="text-3xl hover:text-[#455148] hover:underline text-primary">
             <a
@@ -55,8 +58,10 @@ export default function NavBar() {
             <li className="hover:text-[#556E5B] hover:underline">
               <a href="#ebooks">Ebooks</a>
             </li>
+            <li className="hover:text-[#556E5B] hover:underline">
+              <a href="#faq">FAQ</a>
+            </li>
           </ul>
-
 
           <button
             onClick={() =>
@@ -66,7 +71,7 @@ export default function NavBar() {
               )
             }
             className="hidden w-auto h-[48px] px-[10px] py-[5px] rounded-full bg-white border border-primary text-[10px] font-semibold text-primary transition hover:bg-primary hover:text-white hover:border-white focus:ring-3 focus:ring-secondary focus:outline-hidden cursor-pointer xl:inline-block whitespace-nowrap"
->
+          >
             AGENDE SUA CONSULTA
           </button>
         </div>
@@ -103,6 +108,9 @@ export default function NavBar() {
               </li>
               <li className="text-lg hover:text-[#556E5B] hover:underline">
                 <a href="#ebooks">Ebooks</a>
+              </li>
+              <li className="text-lg hover:text-[#556E5B] hover:underline">
+                <a href="#faq">FAQ</a>
               </li>
             </ul>
           </div>
